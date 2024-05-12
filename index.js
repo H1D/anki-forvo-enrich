@@ -8,8 +8,6 @@ const ISO6391 = require("iso-639-1");
 const os = require("os");
 const chalk = require("chalk");
 
-const OUT_FILE_PATH = path.resolve(__dirname, "out.csv");
-
 function red(strings, ...values) {
   let str = strings[0];
   for (let i = 0; i < values.length; i++) {
@@ -52,7 +50,7 @@ switch (os.platform()) {
     process.exit(1);
 }
 
-console.info(blue`Dir for audio files: `, AUDIO_DIR);
+console.info(blue`Dir for audio files: ${AUDIO_DIR}`);
 
 async function fetchPronunciation(word, retryCount = 0) {
   try {
@@ -100,6 +98,11 @@ function downloadAudio(url, word) {
 }
 
 function readCSV(filePath) {
+  const OUT_FILE_PATH = path.resolve(
+    path.dirname(filePath),
+    `${path.basename(filePath, ".csv")}_pronunciations.csv`
+  );
+
   const csvWriter = createCsvWriter({
     path: OUT_FILE_PATH,
     header: [
@@ -125,6 +128,7 @@ function readCSV(filePath) {
         })
       );
 
+      console.info(blue`Writing to ${OUT_FILE_PATH}`);
       csvWriter.writeRecords(records).then(() => {
         console.log("...Done");
       });
