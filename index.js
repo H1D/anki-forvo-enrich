@@ -1,162 +1,200 @@
+#!/usr/bin/env node
+
 const axios = require("axios");
 const cheerio = require("cheerio");
-const csv = require("csv-parser");
+const fastcsv = require("fast-csv");
 const fs = require("fs");
 const path = require("path");
-const createCsvWriter = require("csv-writer").createObjectCsvWriter;
 const ISO6391 = require("iso-639-1");
 const os = require("os");
 const chalk = require("chalk");
+const { Command } = require("commander");
+const packageJson = require("./package.json");
 
-function red(strings, ...values) {
-  let str = strings[0];
-  for (let i = 0; i < values.length; i++) {
-    str += values[i] + strings[i + 1];
-  }
-  console.log(chalk.red(str));
-}
+const program = new Command();
 
-function blue(strings, ...values) {
-  let str = strings[0];
-  for (let i = 0; i < values.length; i++) {
-    str += values[i] + strings[i + 1];
-  }
-  console.log(chalk.blue(str));
-}
-
-let AUDIO_DIR;
-
-switch (os.platform()) {
-  case "darwin":
-    AUDIO_DIR = path.resolve(
-      os.homedir(),
-      "Library/Application Support/Anki2/User 1/collection.media/"
-    );
-    break;
-  case "win32":
-    AUDIO_DIR = path.resolve(
-      os.homedir(),
-      "AppData/Roaming/Anki2/User 1/collection.media/"
-    );
-    break;
-  case "linux":
-    AUDIO_DIR = path.resolve(
-      os.homedir(),
-      ".local/share/Anki2/User 1/collection.media/"
-    );
-    break;
-  default:
-    console.error(red`Unsupported platform`);
-    process.exit(1);
-}
-
-console.info(blue`Dir for audio files: ${AUDIO_DIR}`);
-
-async function fetchPronunciation(word, retryCount = 0) {
-  try {
-    const url = `https://forvo.com/word/${encodeURIComponent(word)}/#${lang}`;
-    console.log(`Fetching pronunciation from: ${url}`);
-    const response = await axios.get(url);
-    const $ = cheerio.load(response.data);
-    const audioLink = $(".play").attr("onclick"); // Simplified extraction
-    const mp3Regex = /Play\(\d+,'[^']+','([^']+)/;
-    const matches = mp3Regex.exec(audioLink);
-    if (matches && matches[1]) {
-      const decodedString = Buffer.from(matches[1], "base64").toString("utf-8");
-      const audioUrl = `https://audio00.forvo.com/ogg/${decodedString}`;
-      console.log(`Found audio URL: ${audioUrl}`);
-      return downloadAudio(audioUrl, word);
+program
+  .name("npx " + packageJson.name)
+  .description(packageJson.description)
+  .version(packageJson.version)
+  .argument(
+    "<path-to-file>",
+    'Path to Anki flashcards export file. (Use "Notes as in Plain text" format. No HTML, no tags included. )'
+  )
+  .argument("<lang>", "ISO 639-1 language code")
+  .option("-a, --articles <list>", "Comma separated list of article in <lang>")
+  .action((filePath, lang, options) => {
+    if (!ISO6391.validate(lang)) {
+      console.error(
+        chalk.red(
+          `Unsupported language. Please provide a valid ISO 639-1 language code.`
+        )
+      );
+      program.help();
     }
-  } catch (error) {
-    if (error?.response?.status === 404) {
-      console.info(blue`Can't find pronunciation for "${word}"`);
-      return;
+
+    let articles = [];
+    if (options.articles) {
+      articles = options.articles.split(",").map((a) => a.trim());
     }
-    if (retryCount < 5) {
-      // Maximum of 5 retries
-      await new Promise((resolve) =>
-        setTimeout(resolve, 1000 * (retryCount + 1))
-      ); // Delay increases with each retry
-      return fetchPronunciation(word, retryCount + 1);
-    } else {
-      console.error(red`Error fetching pronunciation for "${word}": ${error}`);
+
+    let AUDIO_DIR;
+
+    switch (os.platform()) {
+      case "darwin":
+        AUDIO_DIR = path.resolve(
+          os.homedir(),
+          "Library/Application Support/Anki2/User 1/collection.media/"
+        );
+        break;
+      case "win32":
+        AUDIO_DIR = path.resolve(
+          os.homedir(),
+          "AppData/Roaming/Anki2/User 1/collection.media/"
+        );
+        break;
+      case "linux":
+        AUDIO_DIR = path.resolve(
+          os.homedir(),
+          ".local/share/Anki2/User 1/collection.media/"
+        );
+        break;
+      default:
+        console.error(chalk.red(`Unsupported platform`));
+        process.exit(1);
     }
-  }
-}
 
-function downloadAudio(url, word) {
-  const audioPath = path.resolve(AUDIO_DIR, `./${word}.mp3`);
-  return axios({
-    method: "get",
-    url: url,
-    responseType: "stream",
-  }).then((response) => {
-    console.log(`Downloading audio for ${word} to ${audioPath}`);
-    response.data.pipe(fs.createWriteStream(audioPath));
-    return `${word};[sound:${word}.mp3]`;
-  });
-}
+    console.info(chalk.blue(`Dir for audio files: ${AUDIO_DIR}`));
 
-function readCSV(filePath) {
-  const OUT_FILE_PATH = path.resolve(
-    path.dirname(filePath),
-    `${path.basename(filePath, ".csv")}_pronunciations.csv`
-  );
+    async function fetchPronunciation(word, retryCount = 0) {
+      try {
+        const url = `https://forvo.com/word/${encodeURIComponent(
+          word
+        )}/#${lang}`;
+        console.log(`---${word}---`);
+        console.log(`Looking for pronunciations: ${url}`);
+        const response = await axios.get(url);
+        const $ = cheerio.load(response.data);
+        const audioLink = $(".play").attr("onclick"); // Simplified extraction
+        const mp3Regex = /Play\(\d+,'[^']+','([^']+)/;
+        const matches = mp3Regex.exec(audioLink);
+        if (matches && matches[1]) {
+          const decodedString = Buffer.from(matches[1], "base64").toString(
+            "utf-8"
+          );
+          const audioUrl = `https://audio00.forvo.com/ogg/${decodedString}`;
+          console.log(`Found audio URL: ${audioUrl}`);
+          return downloadAudio(audioUrl, word);
+        }
+      } catch (error) {
+        if (error?.response?.status === 404) {
+          if (articles.length) {
+            const articleRegex = new RegExp(`\\b${articles.join("|")}\\b`, "i");
+            const articleMatch = articleRegex.exec(word);
+            if (articleMatch) {
+              const article = articleMatch[0];
+              console.log(`Retrying without article: ${article}`);
+              return fetchPronunciation(
+                word.replace(article, "").trim(),
+                retryCount
+              );
+            }
+          }
 
-  const csvWriter = createCsvWriter({
-    path: OUT_FILE_PATH,
-    header: [
-      { id: "word", title: "WORD" },
-      { id: "translation", title: "TRANSLATION" },
-    ],
-    append: true, //avoid adding header
-  });
+          console.info(chalk.blue(`Can't find pronunciation for "${word}"`));
+          return;
+        }
+        if (retryCount < 5) {
+          // Maximum of 5 retries
+          await new Promise((resolve) =>
+            setTimeout(resolve, 1000 * (retryCount + 1))
+          ); // Delay increases with each retry
+          return fetchPronunciation(word, retryCount + 1);
+        } else {
+          console.error(
+            chalk.red(`Error fetching pronunciation for "${word}": ${error}`)
+          );
+        }
+      }
+    }
 
-  fs.createReadStream(filePath)
-    .pipe(csv({ headers: false }))
-    .on("data", (data) => results.push(data))
-    .on("end", async () => {
-      console.info(blue`CSV file successfully processed`);
-      console.log(results);
-      const records = await Promise.all(
-        results.filter(Boolean).map(async (data) => {
-          const audioEntry = await fetchPronunciation(data[0]);
-          return {
-            word: audioEntry ?? data[0],
-            translation: data[1],
-          };
-        })
+    function downloadAudio(url, word) {
+      const audioPath = path.resolve(AUDIO_DIR, `./${word}.mp3`);
+      return axios({
+        method: "get",
+        url: url,
+        responseType: "stream",
+      }).then((response) => {
+        console.log(`Downloading audio for "${word}" to ${audioPath}`);
+        response.data.pipe(fs.createWriteStream(audioPath));
+        return `[sound:${word}.mp3]`;
+      });
+    }
+
+    function readTSV(filePath) {
+      const OUT_FILE_PATH = path.resolve(
+        path.dirname(filePath),
+        `${path.basename(filePath, ".tsv")}_pronunciations.tsv`
       );
 
-      console.info(blue`Writing to ${OUT_FILE_PATH}`);
-      csvWriter.writeRecords(records).then(() => {
-        console.log("...Done");
-      });
-    });
-}
+      try {
+        if (fs.existsSync(OUT_FILE_PATH)) {
+          fs.unlinkSync(OUT_FILE_PATH);
+        }
+      } catch (err) {
+        console.error(err);
+      }
 
-// Main execution
-const filePath = process.argv[2];
-let lang = process.argv[3]; // No default value
+      fs.createReadStream(filePath)
+        .pipe(fastcsv.parse({ headers: false, delimiter: "\t" }))
+        .on("data", ([guid, front, back]) => {
+          if (!guid || !front || !back) return; // Skip metadata lines
+          results.push([guid, front, back]);
+        })
+        .on("end", async () => {
+          let records = [];
+          let missedWords = [];
+          for (const data of results.filter(Boolean)) {
+            const [guid, front, back] = data;
+            const audioEntry = await fetchPronunciation(front);
+            if (!audioEntry) missedWords.push(front);
+            records.push({
+              guid,
+              front: front + (audioEntry ?? ""),
+              back: back,
+            });
+          }
 
-if (!filePath) {
-  console.error(red`Please provide a file path as an argument`);
-  process.exit(1);
-}
+          console.info(`Processed ${records.length} words.`);
+          // log missed words
+          missedWords.length &&
+            console.info(
+              `${missedWords.length} words could not be found in Forvo:\n`,
+              `${chalk.red(missedWords.join("\n"))}`
+            );
+          console.info(chalk.blue(`Writing to ${chalk.bold(OUT_FILE_PATH)}`));
+          const writeStream = fs.createWriteStream(OUT_FILE_PATH, {
+            flags: "a",
+          });
+          writeStream.write("#separator:tab\n#html:true\n#guid column:1\n"); // Prepend the lines
+          fastcsv
+            .write(records, {
+              headers: false,
+              delimiter: "\t",
+            })
+            .pipe(writeStream)
+            .on("finish", () => {
+              console.log("...Done");
+            });
+        });
+    }
 
-if (lang && !ISO6391.validate(lang)) {
-  console.error(
-    red`Unsupported language. Please provide a valid ISO 639-1 language code.`
-  );
-  process.exit(1);
-}
+    const results = [];
+    readTSV(filePath);
+  });
 
-const results = [];
-try {
-  if (fs.existsSync(OUT_FILE_PATH)) {
-    fs.unlinkSync(OUT_FILE_PATH);
-  }
-} catch (err) {
-  console.error(err);
-}
-readCSV(filePath, lang);
+program.configureOutput({
+  outputError: (str, write) => write(chalk.red(str)),
+});
+program.showHelpAfterError();
+program.parse(process.argv);
