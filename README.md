@@ -23,7 +23,8 @@ This script fetches pronunciation audio for words in Anki flashcards from forvo.
    npx your-script-name <path-to-file> <lang> --articles <list>
    ```
 
-   Replace `<path-to-file>` with the path to your exported Anki file and `<lang>` with the ISO 639-1 language code. Articles are optional comma separated list of article for `<lang>`. If no article is provided, the script will attempt to fetch pronunciations ignoring articles if needed.
+   Replace `<path-to-file>` with the path to your exported Anki file and `<lang>` with the ISO 639-1 language code. Articles are optional **comma separated** list of article for `<lang>`. If no article is provided, the script will attempt to fetch pronunciations ignoring articles if needed.
+   Example: `npx your-script-name /tmp/Spanish.txt es --articles "el,la"`
 
 1. After processing, a new file with pronunciation links will be generated in the same directory as your original file. See script output for details.
 1. Import this new file back into Anki using the "Import" feature. You can either use new deck or import into existing deck, existing cards will be updated.
