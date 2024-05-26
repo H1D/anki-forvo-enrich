@@ -7,6 +7,10 @@
     "audio"
   ],
   "description": "Enrich Anki flashcards with Forvo pronunciations",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/H1D/anki-forvo-enrich"
+  },
   "version": "1.0.0",
   "type": "commonjs",
   "main": "index.js",
