@@ -10,11 +10,13 @@ This script fetches pronunciation audio for words in Anki flashcards from forvo.
 - Anki installed on your system.
 - You cards front include only the word you want to fetch pronunciation for. Articles are **allowed** (see usage for details).
 
+
 ## Usage
 
 1. Export your Anki flashcards. Use following options:
    - "Notes as in Plain text" format
-   - all checkboxes unchecked (except for "Include unique identifier")
+   - all checkboxes unchecked (except for "Include unique identifier")<img width="779" alt="Screenshot 2024-05-26 at 16 56 13" src="https://github.com/H1D/anki-forvo-enrich/assets/697625/aa931d68-5f6d-44a3-bafa-5356dbcf9da4">
+
 1. Run the script using the following command:
 
    ```bash
@@ -25,6 +27,12 @@ This script fetches pronunciation audio for words in Anki flashcards from forvo.
 
 1. After processing, a new file with pronunciation links will be generated in the same directory as your original file. See script output for details.
 1. Import this new file back into Anki using the "Import" feature. You can either use new deck or import into existing deck, existing cards will be updated.
+
+<img width="297" alt="Screenshot 2024-05-26 at 16 06 59" src="https://github.com/H1D/anki-forvo-enrich/assets/697625/f7e2c157-c5a0-4198-8109-71ef7612c4cc"><br/>
+
+<img width="460" alt="Screenshot 2024-05-26 at 16 40 02" src="https://github.com/H1D/anki-forvo-enrich/assets/697625/6a871448-6708-477f-9f83-43b448170d3a">
+
+
 
 ## Libs Used
 
