@@ -1,0 +1,882 @@
+
+> anki-forvo-enrich@1.0.0 run
+> node index.js  /tmp/Dutch.txt nl
+
+Dir for audio files: /Users/temasus/Library/Application Support/Anki2/User 1/collection.media
+File successfully processed, found words:
+---Hallo!---
+Fetching pronunciation from: https://forvo.com/word/Hallo!/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8981864/39/8981864_39_1011072_1.ogg
+Downloading audio for Hallo! to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/Hallo!.mp3
+---Dag!---
+Fetching pronunciation from: https://forvo.com/word/Dag!/#nl
+Can't find pronunciation for "Dag!"
+---de hostess---
+Fetching pronunciation from: https://forvo.com/word/de%20hostess/#nl
+Can't find pronunciation for "de hostess"
+---hoe?---
+Fetching pronunciation from: https://forvo.com/word/hoe%3F/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9691014/50/9691014_50_7088670.ogg
+Downloading audio for hoe? to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/hoe?.mp3
+---heten---
+Fetching pronunciation from: https://forvo.com/word/heten/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9025701/118/9025701_118_680825_1.ogg
+Downloading audio for heten to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/heten.mp3
+---jullie---
+Fetching pronunciation from: https://forvo.com/word/jullie/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9013777/118/9013777_118_611433_1.ogg
+Downloading audio for jullie to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/jullie.mp3
+---ik---
+Fetching pronunciation from: https://forvo.com/word/ik/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9454413/118/9454413_118_521676.ogg
+Downloading audio for ik to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/ik.mp3
+---en---
+Fetching pronunciation from: https://forvo.com/word/en/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9505057/49/9505057_49_26086.ogg
+Downloading audio for en to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/en.mp3
+---komen---
+Fetching pronunciation from: https://forvo.com/word/komen/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9057576/118/9057576_118_67660_24865.ogg
+Downloading audio for komen to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/komen.mp3
+---voor---
+Fetching pronunciation from: https://forvo.com/word/voor/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9013777/118/9013777_118_289643_57295.ogg
+Downloading audio for voor to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/voor.mp3
+---de kaasproeverij---
+Fetching pronunciation from: https://forvo.com/word/de%20kaasproeverij/#nl
+Can't find pronunciation for "de kaasproeverij"
+---Ja---
+Fetching pronunciation from: https://forvo.com/word/Ja/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8979374/34/8979374_34_21073_23397.ogg
+Downloading audio for Ja to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/Ja.mp3
+---Nee---
+Fetching pronunciation from: https://forvo.com/word/Nee/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8977441/118/8977441_118_300389_1.ogg
+Downloading audio for Nee to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/Nee.mp3
+---wonen---
+Fetching pronunciation from: https://forvo.com/word/wonen/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8973863/118/8973863_118_33954_1.ogg
+Downloading audio for wonen to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/wonen.mp3
+---in---
+Fetching pronunciation from: https://forvo.com/word/in/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8981864/39/8981864_39_20933_1744082.ogg
+Downloading audio for in to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/in.mp3
+---de straat---
+Fetching pronunciation from: https://forvo.com/word/de%20straat/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9477235/118/9477235_118_4985436.ogg
+Downloading audio for de straat to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/de straat.mp3
+---de tulp---
+Fetching pronunciation from: https://forvo.com/word/de%20tulp/#nl
+Can't find pronunciation for "de tulp"
+---we---
+Fetching pronunciation from: https://forvo.com/word/we/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9727160/39/9727160_39_70347.ogg
+Downloading audio for we to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/we.mp3
+---op---
+Fetching pronunciation from: https://forvo.com/word/op/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8974660/33/8974660_33_302298_1103001.ogg
+Downloading audio for op to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/op.mp3
+---het nummber---
+Fetching pronunciation from: https://forvo.com/word/het%20nummber/#nl
+Can't find pronunciation for "het nummber"
+---goed---
+Fetching pronunciation from: https://forvo.com/word/goed/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9412304/118/9412304_118_289648.ogg
+Downloading audio for goed to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/goed.mp3
+---staan---
+Fetching pronunciation from: https://forvo.com/word/staan/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8979599/118/8979599_118_334813_1.ogg
+Downloading audio for staan to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/staan.mp3
+---de lijst---
+Fetching pronunciation from: https://forvo.com/word/de%20lijst/#nl
+Can't find pronunciation for "de lijst"
+---Prima---
+Fetching pronunciation from: https://forvo.com/word/Prima/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8977554/34/8977554_34_302993_1.ogg
+Downloading audio for Prima to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/Prima.mp3
+---Bedankt---
+Fetching pronunciation from: https://forvo.com/word/Bedankt/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8978735/118/8978735_118_325689_1.ogg
+Downloading audio for Bedankt to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/Bedankt.mp3
+---tot---
+Fetching pronunciation from: https://forvo.com/word/tot/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8979374/34/8979374_34_22802_47825.ogg
+Downloading audio for tot to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/tot.mp3
+---straks---
+Fetching pronunciation from: https://forvo.com/word/straks/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9134984/120/9134984_120_447297_913888.ogg
+Downloading audio for straks to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/straks.mp3
+---later---
+Fetching pronunciation from: https://forvo.com/word/later/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9218662/39/9218662_39_3201_1598403.ogg
+Downloading audio for later to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/later.mp3
+---Goedendag---
+Fetching pronunciation from: https://forvo.com/word/Goedendag/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9193173/118/9193173_118_617408.ogg
+Downloading audio for Goedendag to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/Goedendag.mp3
+---u---
+Fetching pronunciation from: https://forvo.com/word/u/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8979922/49/8979922_49_24019_134438.ogg
+Downloading audio for u to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/u.mp3
+---de meneer---
+Fetching pronunciation from: https://forvo.com/word/de%20meneer/#nl
+Can't find pronunciation for "de meneer"
+---ook---
+Fetching pronunciation from: https://forvo.com/word/ook/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9775126/118/9775126_118_305031.ogg
+Downloading audio for ook to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/ook.mp3
+---Waar---
+Fetching pronunciation from: https://forvo.com/word/Waar/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8980262/118/8980262_118_372959_1.ogg
+Downloading audio for Waar to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/Waar.mp3
+---de laan---
+Fetching pronunciation from: https://forvo.com/word/de%20laan/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9523171/118/9523171_118_7565592.ogg
+Downloading audio for de laan to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/de laan.mp3
+---de berk---
+Fetching pronunciation from: https://forvo.com/word/de%20berk/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9523171/118/9523171_118_7565531.ogg
+Downloading audio for de berk to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/de berk.mp3
+---Sorry---
+Fetching pronunciation from: https://forvo.com/word/Sorry/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8981864/39/8981864_39_20362_780931.ogg
+Downloading audio for Sorry to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/Sorry.mp3
+---de kaasmaker---
+Fetching pronunciation from: https://forvo.com/word/de%20kaasmaker/#nl
+Can't find pronunciation for "de kaasmaker"
+---nieuw---
+Fetching pronunciation from: https://forvo.com/word/nieuw/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8980262/118/8980262_118_334806_1.ogg
+Downloading audio for nieuw to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/nieuw.mp3
+---de leerling---
+Fetching pronunciation from: https://forvo.com/word/de%20leerling/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9797032/118/9797032_118_5972320.ogg
+Downloading audio for de leerling to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/de leerling.mp3
+---de leerlinge---
+Fetching pronunciation from: https://forvo.com/word/de%20leerlinge/#nl
+Can't find pronunciation for "de leerlinge"
+---de docent---
+Fetching pronunciation from: https://forvo.com/word/de%20docent/#nl
+Can't find pronunciation for "de docent"
+---de docente---
+Fetching pronunciation from: https://forvo.com/word/de%20docente/#nl
+Can't find pronunciation for "de docente"
+---hier---
+Fetching pronunciation from: https://forvo.com/word/hier/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9272790/49/9272790_49_21027_1919183.ogg
+Downloading audio for hier to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/hier.mp3
+---Wat?---
+Fetching pronunciation from: https://forvo.com/word/Wat%3F/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9691014/50/9691014_50_7088680.ogg
+Downloading audio for Wat? to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/Wat?.mp3
+---mijn---
+Fetching pronunciation from: https://forvo.com/word/mijn/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8976323/118/8976323_118_556561_1.ogg
+Downloading audio for mijn to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/mijn.mp3
+---je---
+Fetching pronunciation from: https://forvo.com/word/je/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8996808/49/8996808_49_21168_239032.ogg
+Downloading audio for je to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/je.mp3
+---uw---
+Fetching pronunciation from: https://forvo.com/word/uw/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9145250/118/9145250_118_611482_349766.ogg
+Downloading audio for uw to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/uw.mp3
+---de naam---
+Fetching pronunciation from: https://forvo.com/word/de%20naam/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9477235/118/9477235_118_4985430.ogg
+Downloading audio for de naam to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/de naam.mp3
+---spellen---
+Fetching pronunciation from: https://forvo.com/word/spellen/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9219786/118/9219786_118_1879972_1.ogg
+Downloading audio for spellen to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/spellen.mp3
+---dat---
+Fetching pronunciation from: https://forvo.com/word/dat/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9459069/93/9459069_93_373051.ogg
+Downloading audio for dat to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/dat.mp3
+---bedoelen---
+Fetching pronunciation from: https://forvo.com/word/bedoelen/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8980262/118/8980262_118_454776_1.ogg
+Downloading audio for bedoelen to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/bedoelen.mp3
+---de achternaam---
+Fetching pronunciation from: https://forvo.com/word/de%20achternaam/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9477235/118/9477235_118_4985429.ogg
+Downloading audio for de achternaam to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/de achternaam.mp3
+---de voornaam---
+Fetching pronunciation from: https://forvo.com/word/de%20voornaam/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9477235/118/9477235_118_4985431.ogg
+Downloading audio for de voornaam to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/de voornaam.mp3
+---niet---
+Fetching pronunciation from: https://forvo.com/word/niet/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8975434/118/8975434_118_286213_1.ogg
+Downloading audio for niet to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/niet.mp3
+---zoals---
+Fetching pronunciation from: https://forvo.com/word/zoals/#nl
+Found audio URL: https://audio00.forvo.com/ogg/10315619/118/10315619_118_314372.ogg
+Downloading audio for zoals to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/zoals.mp3
+---de smid---
+Fetching pronunciation from: https://forvo.com/word/de%20smid/#nl
+Can't find pronunciation for "de smid"
+---maar---
+Fetching pronunciation from: https://forvo.com/word/maar/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9479846/118/9479846_118_289636.ogg
+Downloading audio for maar to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/maar.mp3
+---met---
+Fetching pronunciation from: https://forvo.com/word/met/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8981864/39/8981864_39_291112.ogg
+Downloading audio for met to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/met.mp3
+---zeggen---
+Fetching pronunciation from: https://forvo.com/word/zeggen/#nl
+Found audio URL: https://audio00.forvo.com/ogg/10315619/118/10315619_118_372937.ogg
+Downloading audio for zeggen to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/zeggen.mp3
+---zeker---
+Fetching pronunciation from: https://forvo.com/word/zeker/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9930534/170/9930534_170_611443.ogg
+Downloading audio for zeker to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/zeker.mp3
+---de leukste---
+Fetching pronunciation from: https://forvo.com/word/de%20leukste/#nl
+Can't find pronunciation for "de leukste"
+---thuis---
+Fetching pronunciation from: https://forvo.com/word/thuis/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9057576/118/9057576_118_1271498_1.ogg
+Downloading audio for thuis to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/thuis.mp3
+---stellen---
+Fetching pronunciation from: https://forvo.com/word/stellen/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9203181/34/9203181_34_21244_588509.ogg
+Downloading audio for stellen to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/stellen.mp3
+---de vraag---
+Fetching pronunciation from: https://forvo.com/word/de%20vraag/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9477235/118/9477235_118_4985406.ogg
+Downloading audio for de vraag to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/de vraag.mp3
+---kunnen---
+Fetching pronunciation from: https://forvo.com/word/kunnen/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8973788/118/8973788_118_283280_1.ogg
+Downloading audio for kunnen to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/kunnen.mp3
+---iets---
+Fetching pronunciation from: https://forvo.com/word/iets/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8976099/118/8976099_118_286202_1.ogg
+Downloading audio for iets to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/iets.mp3
+---over---
+Fetching pronunciation from: https://forvo.com/word/over/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9054107/39/9054107_39_5932_87123.ogg
+Downloading audio for over to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/over.mp3
+---jezelf---
+Fetching pronunciation from: https://forvo.com/word/jezelf/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8971691/118/8971691_118_680659_1.ogg
+Downloading audio for jezelf to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/jezelf.mp3
+---vertellen---
+Fetching pronunciation from: https://forvo.com/word/vertellen/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9233940/302/9233940_302_451270_184853.ogg
+Downloading audio for vertellen to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/vertellen.mp3
+---uit (komen uit)---
+Fetching pronunciation from: https://forvo.com/word/uit%20(komen%20uit)/#nl
+Can't find pronunciation for "uit (komen uit)"
+---het dorp---
+Fetching pronunciation from: https://forvo.com/word/het%20dorp/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9477235/118/9477235_118_4985497.ogg
+Downloading audio for het dorp to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/het dorp.mp3
+---hebben---
+Fetching pronunciation from: https://forvo.com/word/hebben/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9077479/118/9077479_118_372894_348832.ogg
+Downloading audio for hebben to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/hebben.mp3
+---het huis---
+Fetching pronunciation from: https://forvo.com/word/het%20huis/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9483888/118/9483888_118_3962067.ogg
+Downloading audio for het huis to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/het huis.mp3
+---dijk---
+Fetching pronunciation from: https://forvo.com/word/dijk/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9008100/118/9008100_118_580913_1.ogg
+Downloading audio for dijk to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/dijk.mp3
+---de broer---
+Fetching pronunciation from: https://forvo.com/word/de%20broer/#nl
+Can't find pronunciation for "de broer"
+---de zus---
+Fetching pronunciation from: https://forvo.com/word/de%20zus/#nl
+Can't find pronunciation for "de zus"
+---al---
+Fetching pronunciation from: https://forvo.com/word/al/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9935600/170/9935600_170_306909.ogg
+Downloading audio for al to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/al.mp3
+---groot---
+Fetching pronunciation from: https://forvo.com/word/groot/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9135792/118/9135792_118_372967_100936.ogg
+Downloading audio for groot to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/groot.mp3
+---ze---
+Fetching pronunciation from: https://forvo.com/word/ze/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9533981/118/9533981_118_384505.ogg
+Downloading audio for ze to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/ze.mp3
+---hij---
+Fetching pronunciation from: https://forvo.com/word/hij/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9633925/118/9633925_118_612292.ogg
+Downloading audio for hij to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/hij.mp3
+---de kat---
+Fetching pronunciation from: https://forvo.com/word/de%20kat/#nl
+Can't find pronunciation for "de kat"
+---de hond---
+Fetching pronunciation from: https://forvo.com/word/de%20hond/#nl
+Can't find pronunciation for "de hond"
+---het huisdier---
+Fetching pronunciation from: https://forvo.com/word/het%20huisdier/#nl
+Can't find pronunciation for "het huisdier"
+---stoppen---
+Fetching pronunciation from: https://forvo.com/word/stoppen/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8979374/34/8979374_34_24278_1.ogg
+Downloading audio for stoppen to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/stoppen.mp3
+---natuurlijk---
+Fetching pronunciation from: https://forvo.com/word/natuurlijk/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9536927/118/9536927_118_607082.ogg
+Downloading audio for natuurlijk to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/natuurlijk.mp3
+---de rekenmachine---
+Fetching pronunciation from: https://forvo.com/word/de%20rekenmachine/#nl
+Can't find pronunciation for "de rekenmachine"
+---gaan---
+Fetching pronunciation from: https://forvo.com/word/gaan/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9412304/118/9412304_118_289663.ogg
+Downloading audio for gaan to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/gaan.mp3
+---beginnen---
+Fetching pronunciation from: https://forvo.com/word/beginnen/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9218640/34/9218640_34_21800.ogg
+Downloading audio for beginnen to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/beginnen.mp3
+---aangenaam---
+Fetching pronunciation from: https://forvo.com/word/aangenaam/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9057576/118/9057576_118_639836_1.ogg
+Downloading audio for aangenaam to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/aangenaam.mp3
+---willen---
+Fetching pronunciation from: https://forvo.com/word/willen/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9057576/118/9057576_118_22357_132502.ogg
+Downloading audio for willen to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/willen.mp3
+---even---
+Fetching pronunciation from: https://forvo.com/word/even/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9419823/39/9419823_39_5873.ogg
+Downloading audio for even to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/even.mp3
+---voorstellen---
+Fetching pronunciation from: https://forvo.com/word/voorstellen/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8974035/118/8974035_118_74686_1.ogg
+Downloading audio for voorstellen to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/voorstellen.mp3
+---aan---
+Fetching pronunciation from: https://forvo.com/word/aan/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9068688/118/9068688_118_314343_412560.ogg
+Downloading audio for aan to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/aan.mp3
+---de buurman---
+Fetching pronunciation from: https://forvo.com/word/de%20buurman/#nl
+Can't find pronunciation for "de buurman"
+---Frankrijk---
+Fetching pronunciation from: https://forvo.com/word/Frankrijk/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9068688/118/9068688_118_89_624371.ogg
+Downloading audio for Frankrijk to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/Frankrijk.mp3
+---erg---
+Fetching pronunciation from: https://forvo.com/word/erg/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8974901/195/8974901_195_119003_1.ogg
+Downloading audio for erg to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/erg.mp3
+---lief---
+Fetching pronunciation from: https://forvo.com/word/lief/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8972715/118/8972715_118_13733_1.ogg
+Downloading audio for lief to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/lief.mp3
+---haar---
+Fetching pronunciation from: https://forvo.com/word/haar/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9218640/34/9218640_34_24787.ogg
+Downloading audio for haar to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/haar.mp3
+---de man---
+Fetching pronunciation from: https://forvo.com/word/de%20man/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9797032/118/9797032_118_5971872.ogg
+Downloading audio for de man to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/de man.mp3
+---de Nederlandse---
+Fetching pronunciation from: https://forvo.com/word/de%20Nederlandse/#nl
+Can't find pronunciation for "de Nederlandse"
+---de televisie---
+Fetching pronunciation from: https://forvo.com/word/de%20televisie/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9477235/118/9477235_118_4985483.ogg
+Downloading audio for de televisie to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/de televisie.mp3
+---de presentator---
+Fetching pronunciation from: https://forvo.com/word/de%20presentator/#nl
+Can't find pronunciation for "de presentator"
+---zij---
+Fetching pronunciation from: https://forvo.com/word/zij/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9617994/118/9617994_118_611415.ogg
+Downloading audio for zij to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/zij.mp3
+---er---
+Fetching pronunciation from: https://forvo.com/word/er/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8973800/34/8973800_34_6241_6309.ogg
+Downloading audio for er to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/er.mp3
+---als---
+Fetching pronunciation from: https://forvo.com/word/als/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9218640/34/9218640_34_20943.ogg
+Downloading audio for als to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/als.mp3
+---de vertelen---
+Fetching pronunciation from: https://forvo.com/word/de%20vertelen/#nl
+Can't find pronunciation for "de vertelen"
+---de vertaalster---
+Fetching pronunciation from: https://forvo.com/word/de%20vertaalster/#nl
+Can't find pronunciation for "de vertaalster"
+---drie---
+Fetching pronunciation from: https://forvo.com/word/drie/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8971691/118/8971691_118_2485_1.ogg
+Downloading audio for drie to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/drie.mp3
+---het meisje---
+Fetching pronunciation from: https://forvo.com/word/het%20meisje/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9797032/118/9797032_118_5971889.ogg
+Downloading audio for het meisje to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/het meisje.mp3
+---spreken---
+Fetching pronunciation from: https://forvo.com/word/spreken/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9013777/118/9013777_118_609360_1.ogg
+Downloading audio for spreken to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/spreken.mp3
+---het Spaans---
+Fetching pronunciation from: https://forvo.com/word/het%20Spaans/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9477235/118/9477235_118_4985418.ogg
+Downloading audio for het Spaans to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/het Spaans.mp3
+---het Italiaans---
+Fetching pronunciation from: https://forvo.com/word/het%20Italiaans/#nl
+Can't find pronunciation for "het Italiaans"
+---het Engels---
+Fetching pronunciation from: https://forvo.com/word/het%20Engels/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9477235/118/9477235_118_4985410.ogg
+Downloading audio for het Engels to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/het Engels.mp3
+---want---
+Fetching pronunciation from: https://forvo.com/word/want/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8981864/39/8981864_39_4411_1550950.ogg
+Downloading audio for want to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/want.mp3
+---de oppas---
+Fetching pronunciation from: https://forvo.com/word/de%20oppas/#nl
+Can't find pronunciation for "de oppas"
+---dat---
+Fetching pronunciation from: https://forvo.com/word/dat/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9459069/93/9459069_93_373051.ogg
+Downloading audio for dat to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/dat.mp3
+---die---
+Fetching pronunciation from: https://forvo.com/word/die/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9320779/39/9320779_39_6237.ogg
+Downloading audio for die to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/die.mp3
+---rood---
+Fetching pronunciation from: https://forvo.com/word/rood/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8981864/39/8981864_39_2496.ogg
+Downloading audio for rood to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/rood.mp3
+---het luik---
+Fetching pronunciation from: https://forvo.com/word/het%20luik/#nl
+Can't find pronunciation for "het luik"
+---zien---
+Fetching pronunciation from: https://forvo.com/word/zien/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9016176/118/9016176_118_289641_1.ogg
+Downloading audio for zien to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/zien.mp3
+---de plant---
+Fetching pronunciation from: https://forvo.com/word/de%20plant/#nl
+Can't find pronunciation for "de plant"
+---de vensterbank---
+Fetching pronunciation from: https://forvo.com/word/de%20vensterbank/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9056389/118/9056389_118_884754_1.ogg
+Downloading audio for de vensterbank to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/de vensterbank.mp3
+---daar---
+Fetching pronunciation from: https://forvo.com/word/daar/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9013777/118/9013777_118_284255_58030.ogg
+Downloading audio for daar to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/daar.mp3
+---mogen---
+Fetching pronunciation from: https://forvo.com/word/mogen/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9036730/157/9036730_157_617484_357417.ogg
+Downloading audio for mogen to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/mogen.mp3
+---dit---
+Fetching pronunciation from: https://forvo.com/word/dit/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8979922/49/8979922_49_284377_268149.ogg
+Downloading audio for dit to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/dit.mp3
+---aardig---
+Fetching pronunciation from: https://forvo.com/word/aardig/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9057576/118/9057576_118_325455_83333.ogg
+Downloading audio for aardig to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/aardig.mp3
+---klein---
+Fetching pronunciation from: https://forvo.com/word/klein/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9233940/34/9233940_34_23199.ogg
+Downloading audio for klein to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/klein.mp3
+---proost---
+Fetching pronunciation from: https://forvo.com/word/proost/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8984973/118/8984973_118_398544_1.ogg
+Downloading audio for proost to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/proost.mp3
+---dus---
+Fetching pronunciation from: https://forvo.com/word/dus/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9057576/118/9057576_118_640158_879190.ogg
+Downloading audio for dus to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/dus.mp3
+---maar---
+Fetching pronunciation from: https://forvo.com/word/maar/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9479846/118/9479846_118_289636.ogg
+Downloading audio for maar to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/maar.mp3
+---gewoon---
+Fetching pronunciation from: https://forvo.com/word/gewoon/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9057576/118/9057576_118_375203_1.ogg
+Downloading audio for gewoon to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/gewoon.mp3
+---jij---
+Fetching pronunciation from: https://forvo.com/word/jij/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9512393/118/9512393_118_432797.ogg
+Downloading audio for jij to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/jij.mp3
+---Hoor!---
+Fetching pronunciation from: https://forvo.com/word/Hoor!/#nl
+Can't find pronunciation for "Hoor!"
+---zullen---
+Fetching pronunciation from: https://forvo.com/word/zullen/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8977441/118/8977441_118_289679_1.ogg
+Downloading audio for zullen to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/zullen.mp3
+---ergens---
+Fetching pronunciation from: https://forvo.com/word/ergens/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9013777/118/9013777_118_611519_1.ogg
+Downloading audio for ergens to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/ergens.mp3
+---wat---
+Fetching pronunciation from: https://forvo.com/word/wat/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8995591/4/8995591_4_382874_1.ogg
+Downloading audio for wat to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/wat.mp3
+---drinken---
+Fetching pronunciation from: https://forvo.com/word/drinken/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9614354/118/9614354_118_451574.ogg
+Downloading audio for drinken to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/drinken.mp3
+---goed---
+Fetching pronunciation from: https://forvo.com/word/goed/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9412304/118/9412304_118_289648.ogg
+Downloading audio for goed to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/goed.mp3
+---het idee---
+Fetching pronunciation from: https://forvo.com/word/het%20idee/#nl
+Can't find pronunciation for "het idee"
+---leuk---
+Fetching pronunciation from: https://forvo.com/word/leuk/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9412304/118/9412304_118_325456.ogg
+Downloading audio for leuk to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/leuk.mp3
+---het cafe---
+Fetching pronunciation from: https://forvo.com/word/het%20cafe/#nl
+Can't find pronunciation for "het cafe"
+---vlakbij---
+Fetching pronunciation from: https://forvo.com/word/vlakbij/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9045722/118/9045722_118_820415_1.ogg
+Downloading audio for vlakbij to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/vlakbij.mp3
+---Wat?---
+Fetching pronunciation from: https://forvo.com/word/Wat%3F/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9691014/50/9691014_50_7088680.ogg
+Downloading audio for Wat? to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/Wat?.mp3
+---nemen---
+Fetching pronunciation from: https://forvo.com/word/nemen/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9013777/118/9013777_118_612294_1.ogg
+Downloading audio for nemen to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/nemen.mp3
+---het biertje---
+Fetching pronunciation from: https://forvo.com/word/het%20biertje/#nl
+Can't find pronunciation for "het biertje"
+---mij---
+Fetching pronunciation from: https://forvo.com/word/mij/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9412304/118/9412304_118_523700.ogg
+Downloading audio for mij to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/mij.mp3
+---het glas---
+Fetching pronunciation from: https://forvo.com/word/het%20glas/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9477235/118/9477235_118_4985488.ogg
+Downloading audio for het glas to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/het glas.mp3
+---wit---
+Fetching pronunciation from: https://forvo.com/word/wit/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8981864/39/8981864_39_289251.ogg
+Downloading audio for wit to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/wit.mp3
+---de wijn---
+Fetching pronunciation from: https://forvo.com/word/de%20wijn/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9520356/118/9520356_118_5972726.ogg
+Downloading audio for de wijn to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/de wijn.mp3
+---lang---
+Fetching pronunciation from: https://forvo.com/word/lang/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8979374/34/8979374_34_21200_1.ogg
+Downloading audio for lang to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/lang.mp3
+---sinds---
+Fetching pronunciation from: https://forvo.com/word/sinds/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9520356/118/9520356_118_314365.ogg
+Downloading audio for sinds to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/sinds.mp3
+---vorig---
+Fetching pronunciation from: https://forvo.com/word/vorig/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9218640/34/9218640_34_582156.ogg
+Downloading audio for vorig to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/vorig.mp3
+---hat jaar---
+Fetching pronunciation from: https://forvo.com/word/hat%20jaar/#nl
+Can't find pronunciation for "hat jaar"
+---wij---
+Fetching pronunciation from: https://forvo.com/word/wij/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9536927/118/9536927_118_379466.ogg
+Downloading audio for wij to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/wij.mp3
+---tien---
+Fetching pronunciation from: https://forvo.com/word/tien/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8971691/118/8971691_118_2493_1.ogg
+Downloading audio for tien to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/tien.mp3
+---eigenlijk---
+Fetching pronunciation from: https://forvo.com/word/eigenlijk/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9013777/118/9013777_118_443599_176284.ogg
+Downloading audio for eigenlijk to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/eigenlijk.mp3
+---de vriend---
+Fetching pronunciation from: https://forvo.com/word/de%20vriend/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9477235/118/9477235_118_4985424.ogg
+Downloading audio for de vriend to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/de vriend.mp3
+---de vriendin---
+Fetching pronunciation from: https://forvo.com/word/de%20vriendin/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9477235/118/9477235_118_4985425.ogg
+Downloading audio for de vriendin to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/de vriendin.mp3
+---noemen---
+Fetching pronunciation from: https://forvo.com/word/noemen/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8988927/118/8988927_118_443793_1.ogg
+Downloading audio for noemen to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/noemen.mp3
+---me---
+Fetching pronunciation from: https://forvo.com/word/me/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8986016/39/8986016_39_18500_133991.ogg
+Downloading audio for me to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/me.mp3
+---grappg---
+Fetching pronunciation from: https://forvo.com/word/grappg/#nl
+Can't find pronunciation for "grappg"
+---zijn---
+Fetching pronunciation from: https://forvo.com/word/zijn/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8975434/118/8975434_118_286208_1.ogg
+Downloading audio for zijn to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/zijn.mp3
+---twoo---
+Fetching pronunciation from: https://forvo.com/word/twoo/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9804655/39/9804655_39_5695105.ogg
+Downloading audio for twoo to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/twoo.mp3
+---de taal---
+Fetching pronunciation from: https://forvo.com/word/de%20taal/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9477235/118/9477235_118_4985464.ogg
+Downloading audio for de taal to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/de taal.mp3
+---Nou!---
+Fetching pronunciation from: https://forvo.com/word/Nou!/#nl
+Can't find pronunciation for "Nou!"
+---het rijk---
+Fetching pronunciation from: https://forvo.com/word/het%20rijk/#nl
+Can't find pronunciation for "het rijk"
+---het land---
+Fetching pronunciation from: https://forvo.com/word/het%20land/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9477235/118/9477235_118_4985433.ogg
+Downloading audio for het land to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/het land.mp3
+---kort---
+Fetching pronunciation from: https://forvo.com/word/kort/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8991718/157/8991718_157_18990_174783.ogg
+Downloading audio for kort to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/kort.mp3
+---voordat---
+Fetching pronunciation from: https://forvo.com/word/voordat/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9057576/118/9057576_118_738677_702841.ogg
+Downloading audio for voordat to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/voordat.mp3
+---druk---
+Fetching pronunciation from: https://forvo.com/word/druk/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8980262/118/8980262_118_307854_67235.ogg
+Downloading audio for druk to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/druk.mp3
+---alles---
+Fetching pronunciation from: https://forvo.com/word/alles/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8979374/34/8979374_34_21049_1.ogg
+Downloading audio for alles to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/alles.mp3
+---binnenkort---
+Fetching pronunciation from: https://forvo.com/word/binnenkort/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9404022/118/9404022_118_873667.ogg
+Downloading audio for binnenkort to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/binnenkort.mp3
+---de studie---
+Fetching pronunciation from: https://forvo.com/word/de%20studie/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9477235/118/9477235_118_4985420.ogg
+Downloading audio for de studie to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/de studie.mp3
+---starten---
+Fetching pronunciation from: https://forvo.com/word/starten/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8979374/34/8979374_34_22847_1.ogg
+Downloading audio for starten to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/starten.mp3
+---het risico---
+Fetching pronunciation from: https://forvo.com/word/het%20risico/#nl
+Can't find pronunciation for "het risico"
+---de kans---
+Fetching pronunciation from: https://forvo.com/word/de%20kans/#nl
+Can't find pronunciation for "de kans"
+---hopen---
+Fetching pronunciation from: https://forvo.com/word/hopen/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9477235/118/9477235_118_400100.ogg
+Downloading audio for hopen to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/hopen.mp3
+---beter---
+Fetching pronunciation from: https://forvo.com/word/beter/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9016176/118/9016176_118_289653_1.ogg
+Downloading audio for beter to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/beter.mp3
+---de groet---
+Fetching pronunciation from: https://forvo.com/word/de%20groet/#nl
+Can't find pronunciation for "de groet"
+---Nou ...---
+Fetching pronunciation from: https://forvo.com/word/Nou%20.../#nl
+Can't find pronunciation for "Nou ..."
+---laten---
+Fetching pronunciation from: https://forvo.com/word/laten/#nl
+Found audio URL: https://audio00.forvo.com/ogg/10315619/118/10315619_118_1285989.ogg
+Downloading audio for laten to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/laten.mp3
+---snel---
+Fetching pronunciation from: https://forvo.com/word/snel/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8980262/118/8980262_118_378116_1.ogg
+Downloading audio for snel to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/snel.mp3
+---je---
+Fetching pronunciation from: https://forvo.com/word/je/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8996808/49/8996808_49_21168_239032.ogg
+Downloading audio for je to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/je.mp3
+---horen---
+Fetching pronunciation from: https://forvo.com/word/horen/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9218640/34/9218640_34_375221.ogg
+Downloading audio for horen to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/horen.mp3
+---altijd---
+Fetching pronunciation from: https://forvo.com/word/altijd/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9775126/118/9775126_118_289652.ogg
+Downloading audio for altijd to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/altijd.mp3
+---welkom---
+Fetching pronunciation from: https://forvo.com/word/welkom/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8978735/118/8978735_118_325690_1.ogg
+Downloading audio for welkom to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/welkom.mp3
+---bij---
+Fetching pronunciation from: https://forvo.com/word/bij/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8975434/118/8975434_118_305020_1.ogg
+Downloading audio for bij to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/bij.mp3
+---Beste---
+Fetching pronunciation from: https://forvo.com/word/Beste/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9060332/118/9060332_118_22093_555400.ogg
+Downloading audio for Beste to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/Beste.mp3
+---mij---
+Fetching pronunciation from: https://forvo.com/word/mij/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9412304/118/9412304_118_523700.ogg
+Downloading audio for mij to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/mij.mp3
+---hem---
+Fetching pronunciation from: https://forvo.com/word/hem/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9025074/157/9025074_157_378036_488212.ogg
+Downloading audio for hem to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/hem.mp3
+---haar---
+Fetching pronunciation from: https://forvo.com/word/haar/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9218640/34/9218640_34_24787.ogg
+Downloading audio for haar to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/haar.mp3
+---ons---
+Fetching pronunciation from: https://forvo.com/word/ons/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8978735/118/8978735_118_314362_1.ogg
+Downloading audio for ons to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/ons.mp3
+---deze---
+Fetching pronunciation from: https://forvo.com/word/deze/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8980262/118/8980262_118_378031_1.ogg
+Downloading audio for deze to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/deze.mp3
+---die---
+Fetching pronunciation from: https://forvo.com/word/die/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9320779/39/9320779_39_6237.ogg
+Downloading audio for die to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/die.mp3
+---dat---
+Fetching pronunciation from: https://forvo.com/word/dat/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9459069/93/9459069_93_373051.ogg
+Downloading audio for dat to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/dat.mp3
+---meer---
+Fetching pronunciation from: https://forvo.com/word/meer/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8979374/34/8979374_34_22994_92058.ogg
+Downloading audio for meer to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/meer.mp3
+---extra---
+Fetching pronunciation from: https://forvo.com/word/extra/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8981864/39/8981864_39_6249_763657.ogg
+Downloading audio for extra to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/extra.mp3
+---mooi---
+Fetching pronunciation from: https://forvo.com/word/mooi/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9280634/118/9280634_118_286345_1333757.ogg
+Downloading audio for mooi to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/mooi.mp3
+---huren---
+Fetching pronunciation from: https://forvo.com/word/huren/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8990952/34/8990952_34_445585_1.ogg
+Downloading audio for huren to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/huren.mp3
+---wat---
+Fetching pronunciation from: https://forvo.com/word/wat/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8995591/4/8995591_4_382874_1.ogg
+Downloading audio for wat to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/wat.mp3
+---te---
+Fetching pronunciation from: https://forvo.com/word/te/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8973129/46/8973129_46_18501_1.ogg
+Downloading audio for te to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/te.mp3
+---er---
+Fetching pronunciation from: https://forvo.com/word/er/#nl
+Found audio URL: https://audio00.forvo.com/ogg/8973800/34/8973800_34_6241_6309.ogg
+Downloading audio for er to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/er.mp3
+---open---
+Fetching pronunciation from: https://forvo.com/word/open/#nl
+Found audio URL: https://audio00.forvo.com/ogg/9396207/39/9396207_39_375238.ogg
+Downloading audio for open to /Users/temasus/Library/Application Support/Anki2/User 1/collection.media/open.mp3
+[
+  'Hallo! [sound:Hallo!.mp3]',
+  'Dag!',
+  'de hostess',
+  'hoe? [sound:hoe?.mp3]',
+  'heten [sound:heten.mp3]',
+  'jullie [sound:jullie.mp3]',
+  'ik [sound:ik.mp3]',
+  'en [sound:en.mp3]',
+  'komen [sound:komen.mp3]',
+  'voor [sound:voor.mp3]',
+  'de kaasproeverij',
+  'Ja [sound:Ja.mp3]',
+  'Nee [sound:Nee.mp3]',
+  'wonen [sound:wonen.mp3]',
+  'in [sound:in.mp3]',
+  'de straat [sound:de straat.mp3]',
+  'de tulp',
+  'we [sound:we.mp3]',
+  'op [sound:op.mp3]',
+  'het nummber',
+  'goed [sound:goed.mp3]',
+  'staan [sound:staan.mp3]',
+  'de lijst',
+  'Prima [sound:Prima.mp3]',
+  'Bedankt [sound:Bedankt.mp3]',
+  'tot [sound:tot.mp3]',
+  'straks [sound:straks.mp3]',
+  'later [sound:later.mp3]',
+  'Goedendag [sound:Goedendag.mp3]',
+  'u [sound:u.mp3]',
+  'de meneer',
+  'ook [sound:ook.mp3]',
+  'Waar [sound:Waar.mp3]',
+  'de laan [sound:de laan.mp3]',
+  'de berk [sound:de berk.mp3]',
+  'Sorry [sound:Sorry.mp3]',
+  'de kaasmaker',
+  'nieuw [sound:nieuw.mp3]',
+  'de leerling [sound:de leerling.mp3]',
+  'de leerlinge',
+  'de docent',
+  'de docente',
+  'hier [sound:hier.mp3]',
+  'Wat? [sound:Wat?.mp3]',
+  'mijn [sound:mijn.mp3]',
+  'je [sound:je.mp3]',
+  'uw [sound:uw.mp3]',
+  'de naam [sound:de naam.mp3]',
+  'spellen [sound:spellen.mp3]',
+  'dat [sound:dat.mp3]',
+  'bedoelen [sound:bedoelen.mp3]',
+  'de achternaam [sound:de achternaam.mp3]',
+  'de voornaam [sound:de voornaam.mp3]',
+  'niet [sound:niet.mp3]',
+  'zoals [sound:zoals.mp3]',
+  'de smid',
+  'maar [sound:maar.mp3]',
+  'met [sound:met.mp3]',
+  'zeggen [sound:zeggen.mp3]',
+  'zeker [sound:zeker.mp3]',
+  'de leukste',
+  'thuis [sound:thuis.mp3]',
+  'stellen [sound:stellen.mp3]',
+  'de vraag [sound:de vraag.mp3]',
+  'kunnen [sound:kunnen.mp3]',
+  'iets [sound:iets.mp3]',
+  'over [sound:over.mp3]',
+  'jezelf [sound:jezelf.mp3]',
+  'vertellen [sound:vertellen.mp3]',
+  'uit (komen uit)',
+  'het dorp [sound:het dorp.mp3]',
+  'hebben [sound:hebben.mp3]',
+  'het huis [sound:het huis.mp3]',
+  'dijk [sound:dijk.mp3]',
+  'de broer',
+  'de zus',
+  'al [sound:al.mp3]',
+  'groot [sound:groot.mp3]',
+  'ze [sound:ze.mp3]',
+  'hij [sound:hij.mp3]',
+  'de kat',
+  'de hond',
+  'het huisdier',
+  'stoppen [sound:stoppen.mp3]',
+  'natuurlijk [sound:natuurlijk.mp3]',
+  'de rekenmachine',
+  'gaan [sound:gaan.mp3]',
+  'beginnen [sound:beginnen.mp3]',
+  'aangenaam [sound:aangenaam.mp3]',
+  'willen [sound:willen.mp3]',
+  'even [sound:even.mp3]',
+  'voorstellen [sound:voorstellen.mp3]',
+  'aan [sound:aan.mp3]',
+  'de buurman',
+  'Frankrijk [sound:Frankrijk.mp3]',
+  'erg [sound:erg.mp3]',
+  'lief [sound:lief.mp3]',
+  'haar [sound:haar.mp3]',
+  'de man [sound:de man.mp3]',
+  'de Nederlandse',
+  ... 103 more items
+]
+Writing to /tmp/Dutch.txt_pronunciations.csv
+...Done
