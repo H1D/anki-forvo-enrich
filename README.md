@@ -8,7 +8,7 @@ This script fetches pronunciation audio for words in Anki flashcards from forvo.
 
 - Node.js installed on your system.
 - Anki installed on your system.
-- You cards front include only the word you want to fetch pronunciation for. Articles **allowed** (see usage for details).
+- You cards front include only the word you want to fetch pronunciation for. Articles are **allowed** (see usage for details).
 
 ## Usage
 
