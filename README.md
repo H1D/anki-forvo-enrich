@@ -14,6 +14,7 @@ This script fetches pronunciation audio for words in Anki flashcards from forvo.
 
 1. Export your Anki flashcards. Use following options:
 
+   - make sure all card **front** should be in **target language** (the one we want to fetch pronunciation for)
    - "Notes as in Plain text" format
    - all checkboxes unchecked (except for "Include unique identifier")<img width="779" alt="Screenshot" src="https://github.com/H1D/anki-forvo-enrich/assets/697625/aa931d68-5f6d-44a3-bafa-5356dbcf9da4">
 
