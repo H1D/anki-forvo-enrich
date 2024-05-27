@@ -2,12 +2,12 @@ Code and docs written by ChatGPT. Proofread and edits by human.
 
 ## What it is
 
-This script fetches pronunciation audio for words in Anki flashcards from forvo.com. It processes Anki flashcard export files in plain text format and adds pronunciation audio links to each flashcard.
+This script fetches pronunciation audio for words in Anki flashcards from forvo.com. It processes Anki flashcard export files in plain text format and adds pronunciation audio links to each flashcard. Anki will automatically play those audio.
 
 ## Prerequisites
 
-- Node.js installed on your system.
-- Anki installed on your system.
+- [Node.js](https://nodejs.org/en) installed on your system.
+- [Anki app](https://apps.ankiweb.net/) installed on your system.
 - You cards front include only the word you want to fetch pronunciation for. Articles are **allowed** (see usage for details).
 
 ## Usage
