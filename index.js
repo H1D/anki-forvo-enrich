@@ -75,7 +75,9 @@ program
         console.log(`Looking for pronunciations: ${url}`);
         const response = await axios.get(url);
         const $ = cheerio.load(response.data);
-        const audioLink = $(".play").attr("onclick"); // Simplified extraction
+        const audioLink = $(`#language-container-${lang} .play`).attr(
+          "onclick"
+        ); // Simplified extraction
         const mp3Regex = /Play\(\d+,'[^']+','([^']+)/;
         const matches = mp3Regex.exec(audioLink);
         if (matches && matches[1]) {
@@ -119,7 +121,9 @@ program
     }
 
     function downloadAudio(url, word) {
-      const audioPath = path.resolve(AUDIO_DIR, `./${word}.mp3`);
+      const fileExtension = path.extname(new URL(url).pathname);
+      const filename = `${word}_${lang}${fileExtension}`;
+      const audioPath = path.resolve(AUDIO_DIR, `./${filename}`);
       return axios({
         method: "get",
         url: url,
@@ -127,7 +131,7 @@ program
       }).then((response) => {
         console.log(`Downloading audio for "${word}" to ${audioPath}`);
         response.data.pipe(fs.createWriteStream(audioPath));
-        return `[sound:${word}.mp3]`;
+        return `[sound:${filename}]`;
       });
     }
 
