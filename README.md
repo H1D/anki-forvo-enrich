@@ -17,7 +17,7 @@ This script fetches pronunciation audio for words in Anki flashcards from forvo.
    - Select "Notes as in Plain text" format.
    - Uncheck all boxes except for "Include unique identifier."
 
-   <img width="779" alt="Screenshot" src="https://github.com/H1D/anki-forvo-enrich/assets/697625/aa931d68-5f6d-44a3-bafa-5356dbcf9da4">
+   <img width="600" alt="Screenshot" src="https://github.com/H1D/anki-forvo-enrich/assets/697625/aa931d68-5f6d-44a3-bafa-5356dbcf9da4">
 
 2. Run the script using the following command:
 
@@ -37,6 +37,9 @@ Example:
 ```bash
 npx your-script-name /tmp/Spanish.txt es --articles "el,la" --key your-api-key
 ```
+
+3. Now audio file are downloaded and notes are updated to include audio. Use Anki `File -> Import` to import notes back. First time you do this I recommend to try it on deck copy. Make sure settings are correct:
+<img width="600" alt="Image" src="https://github.com/user-attachments/assets/df120a9b-3a68-40b0-a865-2bcb11e5cc5b" />
 
 If no articles are provided, the script will attempt to fetch pronunciations while ignoring articles if necessary. 3. After processing, a new file with pronunciation links will be generated in the same directory as your original file. See script output for details. 4. Import the new file back into Anki using the "Import" feature. You can either use a new deck or import into an existing deck (existing cards will be updated).
 
