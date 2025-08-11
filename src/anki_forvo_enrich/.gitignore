@@ -1,0 +1,14 @@
+# User files and logs
+user_files/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment
+.env
+.venv
+venv/
+ENV/ 

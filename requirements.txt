@@ -1,0 +1,9 @@
+requests>=2.32.3
+aqt>=25.2
+anki>=25.2
+PyQt5>=5.15.11
+PyQt6>=6.8.1
+beautifulsoup4>=4.12.3
+mypy>=1.9.0
+types-requests>=2.31.0
+types-beautifulsoup4>=4.12.0 

@@ -1,0 +1,12 @@
+{
+  "api_key": "",
+  "language": "nl",
+  "default_search_query": "prop:ivl<21",
+  "target_field": "Front",
+  "skip_if_has_audio": true,
+  "articles": {
+    "nl": ["de", "het", "een"],
+    "fr": ["le", "la", "les", "un", "une", "des"],
+    "de": ["der", "die", "das", "ein", "eine"]
+  }
+}

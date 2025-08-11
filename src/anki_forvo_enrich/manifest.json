@@ -1,0 +1,10 @@
+{
+  "name": "Anki Forvo Enrich",
+  "package": "anki_forvo_enrich",
+  "description": "Enrich your Anki flashcards with pronunciations from Forvo.",
+  "version": "1.0.0",
+  "author": "Your Name",
+  "homepage": "https://github.com/yourusername/anki-forvo-enrich",
+  "min_point_version": 50,
+  "max_point_version": 99
+}
