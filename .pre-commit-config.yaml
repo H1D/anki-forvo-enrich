@@ -11,6 +11,5 @@ repos:
     rev: v8.28.0
     hooks:
       - id: gitleaks
-        name: gitleaks (protect)
-        args: ["protect", "--staged", "--redact"]
-
+        name: gitleaks (detect)
+        args: ["--no-banner", "--redact"]

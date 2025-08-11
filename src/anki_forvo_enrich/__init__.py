@@ -89,11 +89,11 @@ def get_word_versions(word: str, articles: Optional[List[str]] = None) -> List[s
     # First strip HTML
     word = strip_html(word)
     versions = set([word])
-    
+
     # Add version without punctuation
     clean_word = word.strip().replace(".", "").replace(",", "").replace("!", "").replace("?", "").replace(";", "").replace(":", "")
     versions.add(clean_word)
-    
+
     # Add version without articles if present
     if articles:
         for article in articles:
@@ -101,7 +101,7 @@ def get_word_versions(word: str, articles: Optional[List[str]] = None) -> List[s
                 versions.add(clean_word[len(article):].strip())
             if clean_word.lower().endswith(" " + article.lower()):
                 versions.add(clean_word[:-len(article)].strip())
-    
+
     return list(filter(None, versions))  # Remove empty strings
 
 def fetch_pronunciation(word: str, lang: str, api_key: str, retry_count: int = 0) -> Optional[str]:
@@ -113,36 +113,36 @@ def fetch_pronunciation(word: str, lang: str, api_key: str, retry_count: int = 0
         # Get config for articles
         config = load_config()
         articles = config.get('articles', {}).get(lang, [])
-        
+
         # Try each version of the word
         for version in get_word_versions(word, articles):
             if should_stop:
                 debug_print("Stopping as requested")
                 return None
-                
+
             debug_print(f"Trying version: {version}")
-            
+
             # Check if audio file already exists
             filename = f"{version}_{lang}.mp3"
             media_dir = mw.col.media.dir()
             file_path = os.path.join(media_dir, filename)
-            
+
             if os.path.exists(file_path):
                 debug_print(f"Using existing audio file: {filename}")
                 return f"[sound:{filename}]"
-            
+
             # Try Forvo API
             url = f"{FORVO_API_BASE}/key/{api_key}/format/json/action/word-pronunciations/word/{version}/language/{lang}"
             try:
                 response = requests.get(url)
                 response.raise_for_status()
                 data = response.json()
-                
+
                 if 'items' in data and data['items']:
                     # Get the pronunciation with highest rating
                     best_pronunciation = sorted(data['items'], key=lambda k: k['rate'], reverse=True)[0]
                     audio_url = best_pronunciation['pathmp3']
-                    
+
                     # Download and save the audio
                     audio_tag = download_audio(audio_url, filename)
                     if audio_tag:
@@ -157,7 +157,7 @@ def fetch_pronunciation(word: str, lang: str, api_key: str, retry_count: int = 0
                         debug_print("Daily API limit reached!")
                         raise Exception("Daily Forvo API limit reached. Please try again tomorrow or use a different API key.")
                 raise
-        
+
         return None
     except Exception as e:
         show_error(f"Error fetching pronunciation for {word}", e)
@@ -172,17 +172,17 @@ def download_audio(url: str, filename: str) -> Optional[str]:
         # Don't try to download if the URL is already a sound tag
         if url.startswith('[sound:'):
             return url
-            
+
         response = requests.get(url)
         response.raise_for_status()
-        
+
         # Save to Anki media collection
         media_dir = mw.col.media.dir()
         file_path = os.path.join(media_dir, filename)
-        
+
         with open(file_path, 'wb') as f:
             f.write(response.content)
-        
+
         return f"[sound:{filename}]"
     except Exception as e:
         show_error(f"Error downloading audio from {url}", e)
@@ -269,11 +269,11 @@ class ForvoEnricher:
         if self.is_processing:
             showWarning("Already processing notes. Please wait or restart Anki if stuck.")
             return
-            
+
         try:
             debug_print("Starting enrich_notes")
             config = load_config()
-            
+
             # Only ask for API key if not in config or explicitly needed
             api_key = config.get('api_key', '')
             if not api_key:
@@ -288,7 +288,7 @@ class ForvoEnricher:
                 # Save API key for future use
                 config['api_key'] = api_key
                 save_config(config)
-            
+
             # Only ask for language if not in config
             lang = config.get('language', '')
             if not lang:
@@ -303,7 +303,7 @@ class ForvoEnricher:
                 # Save language for future use
                 config['language'] = lang
                 save_config(config)
-            
+
             # Use default search query from config, fall back to shorter interval property
             query = config.get('default_search_query', 'prop:ivl<21')
             debug_print(f"Using search query: {query}")
@@ -317,7 +317,7 @@ class ForvoEnricher:
                 self.should_stop = True
                 debug_print("User requested stop")
                 return True
-            
+
             # Use a property setter if available, otherwise keep the direct assignment
             try:
                 mw.progress.set_want_cancel(on_cancel)  # type: ignore
@@ -335,21 +335,21 @@ class ForvoEnricher:
                     mw.progress.finish()
                     showInfo("No notes found matching the search query.")
                     return
-                
+
                 # Update progress for processing phase
                 self.update_progress("Processing notes...", value=0, max=len(note_ids))
-                
+
                 debug_print("Starting background processing")
-                
+
                 def on_process_success(changes: OpChanges) -> None:
                     mw.progress.finish()
                     showInfo(self.last_operation_message)
-                
+
                 def on_process_error(exc: Exception) -> None:
                     debug_print(f"Operation failed: {str(exc)}")
                     mw.progress.finish()
                     showWarning(f"Error during processing: {str(exc)}")
-                
+
                 # Use CollectionOp for proper handling of collection operations
                 op = CollectionOp(
                     parent=mw,
@@ -406,4 +406,4 @@ def setup_menu() -> None:
     mw.form.menuTools.addAction(action)  # type: ignore
 
 # Initialize the addon
-setup_menu() 
+setup_menu()

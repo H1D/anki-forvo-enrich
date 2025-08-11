@@ -40,4 +40,4 @@ ignore_missing_imports = True
 EOL
 
 # Run mypy
-mypy --config-file mypy.ini src/anki_forvo_enrich/__init__.py 
+mypy --config-file mypy.ini src/anki_forvo_enrich/__init__.py

@@ -293,4 +293,4 @@ class ForvoBatchDialog(QDialog):
                 # Leave initial status empty; it will update during processing
                 self.results_table.setItem(row, 3, QTableWidgetItem(""))
         op = QueryOp(parent=mw, op=do_search, success=on_done)
-        op.run_in_background() 
+        op.run_in_background()

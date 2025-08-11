@@ -17,4 +17,4 @@ def save_config(config: Dict[str, Any]) -> None:
     try:
         mw.addonManager.writeConfig(__name__, config)
     except Exception as e:
-        showWarning(f"Error saving config: {e}") 
+        showWarning(f"Error saving config: {e}")

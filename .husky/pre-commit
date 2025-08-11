@@ -10,4 +10,3 @@ if command -v gitleaks >/dev/null 2>&1; then
 else
   echo "gitleaks not found; skipping secret scan"
 fi
-
