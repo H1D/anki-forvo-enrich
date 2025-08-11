@@ -1,0 +1,15 @@
+# Gitleaks configuration
+title = "anki-forvo-enrich"
+
+[rules]
+
+# You can add allowlist entries for test keys or sample configs
+[allowlist]
+description = "Allowed files and regexes"
+paths = [
+  "docs/",
+  ".*README.*",
+]
+regexes = [
+]
+
