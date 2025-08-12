@@ -1,122 +1,65 @@
-# Anki Forvo Enrich
+# Anki Forvo Enrich (Anki add-on, Python)
 
-Enrich your Anki flashcards with pronunciations from Forvo.
+Enrich your Anki flashcards with pronunciations from Forvo, directly inside Anki.
+
+## Project layout
+
+- Source code: `src/anki_forvo_enrich/`
+- Config file used by the add-on: `src/anki_forvo_enrich/config.json`
+
+## Requirements
+
+- Anki desktop installed
+- Python 3.9+ (Anki bundles Python but a virtualenv is used for development)
+- A Forvo API key
+
+Install development dependencies into a per-project venv:
+
+```bash
+cd anki-forvo-enrich
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Development
+
+- Run static checks:
+
+```bash
+bash setup.sh
+```
+
+This will install deps (if not installed) and run `mypy` against `src/anki_forvo_enrich/`.
+
+## Installation (into Anki)
+
+1. Create a directory in your Anki add-ons folder, e.g. `anki-forvo-enrich`.
+2. Copy the contents of `src/anki_forvo_enrich/` into that folder.
+3. Restart Anki.
+
+Anki will load the add-on via `__init__.py`. A menu entry "Forvo Enrich" will appear under Tools.
+
+## Usage
+
+1. In Anki, go to Tools > Forvo Enrich
+2. Enter your Forvo API key and language when prompted (saved in the add-on config)
+3. Use the batch dialog to search notes and enrich them
 
 ## Configuration
 
-You can configure the tool using either command-line arguments or environment variables. To use environment variables:
+The add-on stores configuration managed by Anki (`mw.addonManager`) and reads defaults from `src/anki_forvo_enrich/config.json`.
 
-1. Copy the example environment file:
+Key options:
 
-```bash
-wget https://raw.githubusercontent.com/H1D/anki-forvo-enrich/main/.env.example -O .env
-```
-
-2. Edit `.env` with your settings.
-
-### Configuration Options
-
-| Argument/Option  | Environment Variable | Description                         | Default                     | Required |
-| ---------------- | -------------------- | ----------------------------------- | --------------------------- | -------- |
-| `<path-to-file>` | -                    | Path to Anki flashcards export file | -                           | Yes      |
-| `[lang]`         | `LANGUAGE`           | ISO 639-1 language code             | -                           | Yes      |
-| `-k, --key`      | `FORVO_API_KEY`      | Forvo API key                       | -                           | Yes      |
-| `-u, --user`     | `ANKI_USER`          | Anki user name                      | "User 1"                    | No       |
-| `-a, --articles` | `ARTICLES`           | Comma-separated list of articles    | -                           | No       |
-| -                | `FORVO_API_BASE`     | Forvo API base URL                  | "https://apifree.forvo.com" | No       |
-
-Command-line arguments take precedence over environment variables.
-
-## Usage
-
-Basic usage with command-line arguments:
-
-```bash
-npx anki-forvo-enrich <path-to-file> <lang> -k <your-api-key>
-```
-
-Using environment variables (after setting up .env):
-
-```bash
-npx anki-forvo-enrich <path-to-file>
-```
-
-## Examples
-
-1. Using command-line arguments:
-
-```bash
-npx anki-forvo-enrich dutch_cards.txt nl -k your-api-key -a "de,het,een"
-```
-
-2. Using environment variables:
-
-```bash
-# After setting up .env with your configuration:
-npx anki-forvo-enrich dutch_cards.txt
-```
+- `api_key`: Forvo API key
+- `language`: default ISO 639-1 language code
+- `default_search_query`: search used to find notes to enrich
+- `target_field`: field to append audio to
+- `skip_if_has_audio`: skip notes that already contain audio
+- `articles`: per-language articles that will be stripped when querying Forvo
 
 ## Notes
 
-- The tool expects Anki flashcard files in "Notes as Plain text" format (no HTML, no tags included)
-- Audio files are automatically saved to your Anki media collection folder
-- The tool will skip downloading if an audio file already exists for a word
-
-## What it is
-
-This script fetches pronunciation audio for words in Anki flashcards from forvo.com. It processes Anki flashcard export files in plain text format and adds pronunciation audio links to each flashcard. Anki will automatically play those audio.
-
-## Prerequisites
-
-- [Node.js](https://nodejs.org/en) installed on your system.
-- [Anki app](https://apps.ankiweb.net/) installed on your system.
-- Your cards' front side must include only the word you want to fetch pronunciation for. Articles are **allowed** (see usage for details).
-- A [Forvo API key](https://api.forvo.com/plans-and-pricing/) is required. The key costs $2/month, with a minimum duration of 6 months.
-
-## Usage
-
-1. Export your Anki flashcards using the following options:
-
-   - Ensure all card **fronts** are in the **target language** (the one for which you want to fetch pronunciations).
-   - Select "Notes as in Plain text" format.
-   - Uncheck all boxes except for "Include unique identifier."
-
-   <img width="600" alt="Screenshot" src="https://github.com/H1D/anki-forvo-enrich/assets/697625/aa931d68-5f6d-44a3-bafa-5356dbcf9da4">
-
-2. Run the script using the following command:
-
-   ```bash
-   npx your-script-name \<path-to-file\> \<lang\> --articles \<list\> --key \<forvo-api-key\>
-   ```
-
-Replace:
-
-- `<path-to-file>` with the path to your exported Anki file.
-- `<lang>` with the ISO 639-1 language code.
-- `<list>` with a comma-separated list of articles for the language (optional).
-- `<forvo-api-key>` with your Forvo API key.
-
-Example:
-
-```bash
-npx your-script-name /tmp/Spanish.txt es --articles "el,la" --key your-api-key
-```
-
-3. Now audio file are downloaded and notes are updated to include audio. Use Anki `File -> Import` to import notes back. First time you do this I recommend to try it on deck copy. Make sure settings are correct:
-   <img width="600" alt="Image" src="https://github.com/user-attachments/assets/df120a9b-3a68-40b0-a865-2bcb11e5cc5b" />
-
-## Notes
-
-- Forvo API Key: The Forvo API key is mandatory. It costs $2/month with a minimum subscription duration of 6 months. Learn more about pricing on the Forvo API plans page (https://api.forvo.com/plans-and-pricing/).
-
-## Libs Used
-
-- axios: For making HTTP requests.
-- cheerio: For parsing HTML and extracting data.
-- fast-csv: For reading and writing deck files.
-- fs: For handling file system operations.
-- path: For handling file paths.
-- ISO-639-1: For validating ISO 639-1 language codes.
-- os: For handling OS-specific operations.
-- chalk: For colored console output.
-- commander: For command-line interface options.
+- This repository now only contains the Python Anki add-on. The previous Node/CLI workflow and `addon/` staging folder have been removed.
+- Logs and build artifacts are ignored via `.gitignore`.

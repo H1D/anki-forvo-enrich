@@ -1,33 +1,34 @@
-# OS
-.DS_Store
-
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
 *.so
 .venv/
 venv/
-.mypy_cache/
-
-# Editors
-.vscode/
-.idea/
-
-# Node
-node_modules
-
-# Env
 .env
 .env.*
+.mypy_cache/
+.pytype/
+.pytest_cache/
+.dmypy.json
 
-# Logs and output
-*.log
-out.log
-*.csv
+# Tools and reports
 out.csv
+out.log
+mypy.ini
 
-# Tooling
+# Logs
+*.log
+docs/forvo_debug.log
+forvo_debug.log
+src/anki_forvo_enrich/user_files/anki_forvo_enrich.log
+
+# Node remnants (removed)
+node_modules/
+package-lock.json
+
+# macOS
+.DS_Store
+
+# Editor/IDE
 .cursor/
 .cursor-tasks.md
